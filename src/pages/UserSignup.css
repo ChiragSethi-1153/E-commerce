@@ -1,0 +1,16 @@
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-box {
+    background-color: #347239;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 44.514vw;
+    height: 60.692vh;
+}

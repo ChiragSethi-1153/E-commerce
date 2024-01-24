@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '@mui/material'
 import { nanoid } from 'nanoid';
 import { useNavigate } from 'react-router-dom';
+import './UserSignup.css'
 
 
 
@@ -31,7 +32,9 @@ const UserSignup = () => {
     } 
  
   return (
-    <div>
+    <div className='signup'>
+
+      <div className='form-box'>
       <form  onSubmit={handleSubmit}>
         <label htmlFor='name'>Enter Your Name</label><br />
         <input type='text' name='name' value={name} onChange={(e) => setName(e.target.value)} required/>
@@ -45,6 +48,9 @@ const UserSignup = () => {
          <Button variant="contained" type='submit'>Sign Up</Button>
      
       </form>
+
+      </div>
+     
     </div>
   )
 }

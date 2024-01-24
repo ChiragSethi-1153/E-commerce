@@ -1,0 +1,21 @@
+.hero{
+    background-image: url("../assets/images/bg-image.jpg");
+    height: 90.385vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50.694vw;
+    height: 44.744vh;
+    border-radius: 2px;
+    background: rgba(247, 248, 250, 0.80);
+    backdrop-filter: blur(12px);
+}

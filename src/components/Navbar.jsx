@@ -1,4 +1,7 @@
 import * as React from 'react';
+import Logo from '../assets/images/bg.jpg'
+import './Navbar.css'
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -36,28 +39,36 @@ function ResponsiveAppBar() {
   };
 
   return (
+<>
+    <div className='navbar'>
+        <div className='logo'>
+            <img src={Logo} alt='Logo'/>
+            <span className='logo-text' >Candleaf</span> 
+        </div>
+        <div className='menu'>
+            <select name="discovery" id="" className='discovery'> 
+                <option value="">Discovery</option>
+                <option>Products</option>
+                <option value="">Most Searched</option>
+                <option value="">Most Selled</option>
+            </select>
+            <button className='menu-btn'>About</button>
+            <button className='menu-btn' >Contact us</button>
+        </div>
+        <div>
+            <button className='profile-icon'></button>
+            <button className='cart-icon'></button> 
+        </div>
+
+    </div>
+
+
+{/* 
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-
+          
+          
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -156,7 +167,8 @@ function ResponsiveAppBar() {
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
+    </AppBar> */}
+    </>
   );
 }
 export default ResponsiveAppBar;
