@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import { Button } from '@mui/material'
-import { nanoid } from 'nanoid';
+import React, { useState } from 'react';
+import { Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import './UserSignup.css'
 

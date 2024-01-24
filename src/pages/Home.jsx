@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Home.css"
+import Sapling from "../assets/images/sapling.png"
 import { Button } from '@mui/material'
 
 const Home = () => {
@@ -7,11 +8,11 @@ const Home = () => {
     <div className='hero'>
       <div className='box'>
         <div>
-          <img src="../assets/images/sapling.png" alt="" />
+          <img src={Sapling} className='sapling' />
         </div>
-        <div><h1>The nature candle</h1></div>
-        <p>All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
-        <Button variant='contained' >Discovery our collection</Button>
+        <div className='hero-text'>The nature candle</div>
+        <p className='hero-p'>All handmade with natural soy wax, Candleaf is a companion for all your pleasure moments </p>
+        <Button variant='contained' className='hero-btn' >Discovery our collection</Button>
       </div>
     </div>
   )

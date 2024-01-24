@@ -3,31 +3,48 @@
     flex-direction: row;
     align-items: center;
     background-color: #fff;
-    height: 75px;
+    height: 9.615vh;
 }
 
 .logo {
     position: absolute;
     display: flex;
-    align-items: center;
-    left: 12vw;
-    top: 2vh;
+    justify-content: space-between;
+    left: 11.458vw;
+    top: 2.564vh;
 }
 
 .logo-text {
+    width: 5.92vw;
+    height: 1.874vh;
+    margin-left: 0.44vw;
+}
+
+.logo-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.75vw;
+    height: 4.359vh;
+    cursor: pointer;   
+}
+
+/* .logo-text {
     font-family: 'Inter';
-    margin-left: 0.3vw;
+    margin-left: 0.44vw;
     color: #56B280;
     font-weight: 900;
     text-decoration: none;
     font-size: 2.3vh;
     font-stretch: 2vh;
-}
+} */
 
 .menu {
     position: absolute;
     left: 37.5vw;
-    top: 3vh;
+    top: 3.205vh;
     width: 24vw;
     display: flex;
     flex-direction: row;
@@ -40,12 +57,13 @@
     font-family: 'Inter';
     font-weight: bolder;
     border: none;
-    width: 6.2vw;
+    width: 5.903vw;
 }
 
 .menu-btn{
     background: none;
     border: none;
+    width: 8.958vw;
     font-family: 'Inter';
     font-weight: bolder;
     font-size: 13px;

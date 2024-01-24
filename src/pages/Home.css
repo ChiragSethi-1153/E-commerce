@@ -1,21 +1,71 @@
-.hero{
-    background-image: url("../assets/images/bg-image.jpg");
-    height: 90.385vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero {
+  background-image: url("../assets/images/bg-image.jpg");
+  height: 90.385vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50.694vw;
-    height: 44.744vh;
-    border-radius: 2px;
-    background: rgba(247, 248, 250, 0.80);
-    backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50.694vw;
+  height: 44.744vh;
+  border-radius: 2px;
+  background: rgba(247, 248, 250, 0.8);
+  backdrop-filter: blur(12px);
+}
+
+.sapling {
+  width: 4vw;
+}
+
+.hero-text {
+    color: #1D252C;
+text-align: center;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'Poppins';
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 57.6px; /* 144% */
+}
+
+.hero-p {
+  width: 37.292vw;
+  height: 7.179vh;
+  flex-shrink: 0;
+  color: #1d252c;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Helvetica;
+  font-size: 2.308vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.282vh; /* 142.222% */
+}
+
+.hero-btn.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  border-radius: 4px;
+  background: var(--green, #56b280);
+  text-transform: capitalize;
+  padding: 1.026vh 3.056vw;
+  width: 21.528vw;
+  height: 5.128vh;
+  font-family: "Roboto";
+  font-size: 20.645px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-btn.css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #56b280;
+  box-shadow: black;
 }
