@@ -34,13 +34,13 @@ const UserSignup = () => {
     <div>
       <form  onSubmit={handleSubmit}>
         <label htmlFor='name'>Enter Your Name</label><br />
-        <input type='text' name='name' value={name} onChange={(e) => setName(e.target.value)} />
+        <input type='text' name='name' value={name} onChange={(e) => setName(e.target.value)} required/>
         <br />
         <label htmlFor='email'>Enter Your Email</label><br />
-        <input type='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)}  />
+        <input type='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)}  required/>
         <br />
         <label htmlFor='password'>Set Your Password</label><br />
-        <input type='text' name='password' value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input type='text' name='password' value={password} onChange={(e) => setPassword(e.target.value)} required/>
          <br /><br />
          <Button variant="contained" type='submit'>Sign Up</Button>
      
