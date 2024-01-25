@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import Sapling from "../assets/images/sapling.png"
+import Sapling from "../../assets/images/sapling.png"
 import { Button } from '@mui/material'
 
 const Home = () => {

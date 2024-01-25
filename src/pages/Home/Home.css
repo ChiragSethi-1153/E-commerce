@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("../assets/images/bg-image.jpg");
+  background-image: url("../../assets/images/bg-image.jpg");
   height: 90.385vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,7 +57,7 @@ line-height: 57.6px; /* 144% */
   width: 21.528vw;
   height: 5.128vh;
   font-family: "Roboto";
-  font-size: 20.645px;
+  font-size: 2.647vh;
   font-style: normal;
   font-weight: 500;
   line-height: normal;

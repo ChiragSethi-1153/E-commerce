@@ -1,0 +1,124 @@
+.footer {
+    background-color: black;
+    height: 49.103vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-line {
+    width: 77.083vw;
+    margin-top: 7.808vh;
+    height: 1.5px;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 77.083vw;
+}
+
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-text {
+
+    color: #FFF;
+
+    width: 17.361vw;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.8px;
+    /* 142.5% */
+    letter-spacing: -0.5px;
+}
+
+
+
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 35.069vw;
+    height: 21vh;
+    margin-top: 5.617vh;
+}
+
+.btns {
+    background: none;
+    border: none;
+    text-align: left;
+    color: #E1E1E1;
+    font-family: 'Poppins';
+    font-size: 2.051vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.8px;
+    
+}
+
+.btns:hover{
+    cursor: pointer;
+    color: #56b280;
+}
+
+.disc{
+    color: #56b280;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: 'Poppins';
+    font-size: 2.051vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.8px;
+   
+}
+.disc:hover {
+    color: #E1E1E1;
+    cursor: pointer;
+}
+
+.discovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 11.725vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 11.645vw;
+    height: 100%;
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 11.667vw;
+    height: 100%;
+    cursor: pointer;
+}
