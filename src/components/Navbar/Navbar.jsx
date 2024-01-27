@@ -2,8 +2,10 @@ import * as React from 'react';
 import Logo from '../../assets/images/bg.jpg'
 import Wordmark  from "../../assets/images/wordmark.jpg";
 import './Navbar.css'
-import { useNavigate } from 'react-router-dom';
-import Dropdown from 'react-bootstrap/Dropdown';
+import { Link, useNavigate } from 'react-router-dom';
+import ProfileIcon from '../../assets/images/Profile.jpg'
+
+
 
 
 const Navbar = () => {
@@ -11,11 +13,36 @@ const Navbar = () => {
   const navigate = useNavigate(); 
 
   const currentUser = localStorage.getItem("user")
+
+  function dropdownBtn() {
+    document.getElementById("Dropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+
+
 const logout = () => {
   localStorage.removeItem("user")
+  localStorage.removeItem("role")
   navigate('/login')
 }
 
+const role = JSON.parse(localStorage.getItem("role"));
+ 
+ 
+
+  
   return (
     <>
     <div className='navbar'>
@@ -33,39 +60,31 @@ const logout = () => {
                 <option value="">Most Searched</option>
                 <option value="">Most Selled</option>
             </select>
-            <button className='menu-btn'>About</button>
-            <button className='menu-btn' >Contact us</button>
+            <button className='menu-btn' onClick={() => navigate('/about')}>About</button>
+            <button className='menu-btn' onClick={() => navigate('/contactus')}>Contact us</button>
         </div>
         <div>
-        <button className='profile-icon'>
-        <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-     
-      </Dropdown.Toggle>
-      <Dropdown.Menu>
-        <Dropdown.Item>Profile</Dropdown.Item>
-        {
-          currentUser?<Dropdown.Item onClick={logout}>Log Out</Dropdown.Item>: <Dropdown.Item onClick={() => {navigate('/login')}}>Log In</Dropdown.Item>
-        }
-        
-      </Dropdown.Menu>
-      </Dropdown>
 
-        </button>
+        <div className="dropdown">
+        <button className='dropbtn' onClick={dropdownBtn}></button>
+          <div id="Dropdown" className="dropdown-content">
+            <button className='profile-btns'>Profile</button>
+              {
+                (role.role === 20)?<button className='profile-btns' onClick={() => navigate('/dashboard')}>Dashboard</button>: null
+              }
+            {
+            currentUser?<button  className='profile-btns' onClick={logout}>Log Out</button>: <button onClick={() => {navigate('/login')}}>Log In</button>
+           }
+
+           </div>
+        </div>
+
+
+
+
             <button className='cart-icon'></button> 
         </div>
 
-      {/*     <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown> */}
     </div>
     </>
   )

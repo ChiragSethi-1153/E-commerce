@@ -5,6 +5,7 @@ import UserSignup from "../pages/UserSignup/UserSignup";
 import UserLogin from "../pages/UserLogin/UserLogin";
 import About from "../pages/About";
 import ContactUs from "../pages/ContactUs";
+import  Dashboard  from "../components/Dashboard/Dashboard";
 
 const Routing = () => {
   return (
@@ -16,7 +17,7 @@ const Routing = () => {
         <Route path="/login" Component={UserLogin} />
         <Route path="/about" Component={About} />
         <Route path="/contactus" Component={ContactUs} />
-
+        <Route path="/dashboard" Component={Dashboard} />
       </Routes>
 
   );

@@ -12,8 +12,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30.903vw;
-    height: 35.692vh;
+    width: 35.903vw;
+    height: 45.692vh;
 }
 
 .login-text-div {
@@ -25,7 +25,7 @@
 }
 
 .login-text {
-    color: #56B280;
+    color:  var(--green, #56B280);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: "Roboto";
     font-size: 1.389vw;
@@ -37,8 +37,10 @@
 }
 .signup-btn {
     border: none;
-    color: #56B280;
+    color:  var(--green, #56B280);
     background: none;
+    outline: none !important;
+    cursor: pointer;
 }
 
 .login-form>input {
@@ -46,8 +48,9 @@
     border: 1px solid;
     border-color: #898989;
     border-radius: none;
-    width: 28.542vw;
-    height: 3.333vh;
+    width: 30.903vw;
+    height: 5.128vh;
+    outline: none !important;
 }
 
 .login-form>input:active {
@@ -74,5 +77,10 @@
     gap: 10px;
     border-radius: 4px;
     color: #fff;
+    background: var(--green, #56B280);
+    outline: none !important;
+}
+
+.login-btn.css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
     background: var(--green, #56B280);
 }

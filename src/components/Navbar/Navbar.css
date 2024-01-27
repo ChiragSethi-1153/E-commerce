@@ -29,6 +29,7 @@
     width: 8.75vw;
     height: 4.359vh;
     cursor: pointer;
+    outline: none !important;
 }
 
 /* .logo-text {
@@ -64,6 +65,7 @@
     font-size: 2.051vh;
     font-style: normal;
     font-weight: 600;
+    outline: none !important;
     line-height: normal;
 }
 
@@ -78,27 +80,14 @@
     font-size: 2.051vh;
     cursor: pointer;
     text-align: center;
-
+    outline: none !important;
 }
 
-.menu-btn:active {
-    border: none;
-}
 
-#dropdown-basic {
-    background: none;
-    border: none;
-    outline: none;
-}
-
-#dropdown-basic:active {
-    border: none;
-    outline: none;
-}
 
 .profile-icon {
-    background-image: url('../../assets/images/Profile.jpg');
-    background-repeat: no-repeat;
+    /* 
+    background-repeat: no-repeat;background-image: url('../../assets/images/Profile.jpg');
     background-color: #fff;
     height: 4.359vh;
     width: 2.361vw;
@@ -107,10 +96,9 @@
     top: 2.564vh;
     border: none;
     cursor: pointer;
-}
-
-.profile-icon:active {
-    border: none;
+    outline: none !important; */
+    background: none;
+    
 }
 
 .cart-icon {
@@ -124,4 +112,65 @@
     top: 3.077vh;
     border: none;
     cursor: pointer;
+    outline: none !important;
 }
+
+.dropbtn {
+    background-image: url('../../assets/images/Profile.jpg');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    height: 4.359vh;
+    width: 2vw;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #fff;
+  }
+  
+  .dropdown {
+    position: absolute;
+    right: 15.361vw;
+    top: 2.564vh;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 8.111vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content>button {
+    width: 100%;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .dropdown button:hover {
+    background-color: var(--green, #56b280);;
+    color: #fff;
+}
+  
+  .show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  .profile-btns {
+    background: none;
+    border: none;
+    outline: none !important;
+  }

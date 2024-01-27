@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     width: 35.903vw;
-    height: 55.692vh;
+    height: 60.692vh;
 }
 
 .join-div {
@@ -37,13 +37,15 @@
 }
 
 .joinus-span {
-    color: #56B280;
+    color:  var(--green, #56B280);
 }
 
 .login-btn {
     border: none;
-    color: #56B280;
+    color:  var(--green, #56B280);
     background: none;
+    outline: none !important;
+    cursor: pointer;
 }
 
 .signup-form {}
@@ -53,8 +55,9 @@
     border: 1px solid;
     border-color: #898989;
     border-radius: none;
-    width: 28.542vw;
-    height: 3.333vh;
+    width: 30.903vw;
+    height: 5.128vh;
+    outline: none !important;
 }
 
 .signup-form>input:active {
@@ -81,6 +84,10 @@
     gap: 10px;
     border-radius: 4px;
     color: #fff;
+    background: var(--green, #56B280);
+    outline: none !important;
+}
+.signup-btn.css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
     background: var(--green, #56B280);
 }
 

@@ -53,7 +53,6 @@ line-height: 57.6px; /* 144% */
   border-radius: 4px;
   background: var(--green, #56b280);
   text-transform: capitalize;
-  padding: 1.026vh 3.056vw;
   width: 21.528vw;
   height: 5.128vh;
   font-family: "Roboto";
@@ -63,9 +62,10 @@ line-height: 57.6px; /* 144% */
   line-height: normal;
   color: #fff;
   text-align: center;
+  outline: none !important;
 }
 
 .hero-btn.css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
-  background-color: #56b280;
+  background-color: var(--green, #56b280);;
   box-shadow: black;
 }

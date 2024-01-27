@@ -68,6 +68,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 28.8px;
+    outline: none !important;
     
 }
 
@@ -86,6 +87,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 28.8px;
+    outline: none !important;
    
 }
 .disc:hover {
