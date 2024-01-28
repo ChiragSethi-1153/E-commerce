@@ -62,8 +62,7 @@ const UserSignup = () => {
 
     if (errorMessage == "Is Not Strong Password") {
       alert("Set your Password correctly");
-    } 
-    else {
+    } else {
       if (role == 20) {
         if (admins === null) {
           admins = [];
@@ -74,8 +73,7 @@ const UserSignup = () => {
           localStorage.setItem("admins", JSON.stringify(admins));
         }
         navigate("/login");
-      } 
-      else {
+      } else {
         if (users === null) {
           users = [];
           users?.push({ name, email, password });
@@ -112,7 +110,6 @@ const UserSignup = () => {
           </div>
 
           <form onSubmit={handleSubmit} className="signup-form">
-            
             <Box sx={{ minWidth: 120 }}>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label" required>
@@ -189,8 +186,6 @@ const UserSignup = () => {
           </form>
           <br />
         </div>
-
-
       </div>
       <div className="signup-right">
         <img src={Candle} alt="candle" className="signup-img" />

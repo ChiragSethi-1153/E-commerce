@@ -1,0 +1,77 @@
+.about-section {
+    height: 102.564vh;
+    display: flex;
+    background: #F7F8FA;
+}
+
+.aboutsection-left {
+    margin-left: 11.458vw;
+    margin-top: 17.051vh;
+    margin-right: 4.083vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutsection-left > h1 {
+
+width: 24.306vw;
+height: 13.462vh;
+color: #1D252C;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'Poppins';
+font-size: 5.128vh;
+font-style: normal;
+font-weight: 500;
+line-height: 5.974vh; /* 116.5% */
+letter-spacing: -0.063vw;
+text-align: left;
+}
+
+.aboutsection-left > p {
+    width: 24.306vw;
+    height: 3.205vh;
+    color: var(--green, #56B280);
+        font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'Poppins';
+font-size: 2.051vh;
+font-style: normal;
+font-weight: 400;
+line-height: 2.923vh; /* 142.5% */
+text-align: left;
+}
+
+.aboutsection-left > ul {
+    text-align: left;
+    list-style: url('../../assets/images/checkmark-circle-outline\ 1.jpg');
+    list-style-type: none;
+    padding: 1.4vw;
+}
+
+.aboutsection-left > ul >li {
+    color: #000;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'Poppins';
+font-size: 2.051vh;
+font-style: normal;
+line-height: 3.692vh;
+}
+
+.aboutsection-btn.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    border-radius: 4px;
+background: var(--green, #56B280);
+padding: 1.026vh 3.056vw;
+}
+
+
+
+
+
+
+.aboutsection-right{
+margin-top: 27.436vh;
+}
+.aboutimage {
+    height: 48.333vh;
+    width: 37.5vw;
+}

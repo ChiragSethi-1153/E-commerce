@@ -1,0 +1,86 @@
+.add-product {
+    display: flex;
+}
+
+
+
+.addProduct-left {
+    border: 1px solid rgb(238, 224, 224);
+    width: 16vw;
+    height: 91vh;
+    background-color: #fff;
+}
+
+.addProduct-right {
+    border-top: 1px solid rgb(238, 224, 224);
+    width: 84vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.addProduct-right >h1 {
+    position: absolute;
+    left: 20vw;
+    top: 16vh;
+    font-family: 'Roboto';
+    color: #272727;
+}
+.addProduct-form {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px #616161;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40.903vw;
+    height: 60vh;
+}
+
+.addProducts-btn.css-sghohy-MuiButtonBase-root-MuiButton-root {
+    display: inline-flex;
+    padding: 8px 44px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    color: #fff;
+    background: var(--green, #56B280);
+    outline: none !important;
+}
+
+.addProducts-btn.css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+    background: var(--green, #56B280);
+}
+
+.addProduct-form> input {
+    padding: 0.897vh 1.181vw;
+    border: 1px solid;
+    border-color: #898989;
+    border-radius: none;
+    width: 30.903vw;
+    height: 5.128vh;
+    outline: none !important;
+}
+.addProduct-form> input:active {
+    border: 1px solid;
+    border-color: #898989;
+    border-radius: none;
+    outline: none !important;
+}
+
+.addProduct-form> input::placeholder {
+    color: #616161;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+
+#file-upload-button {
+    border: none;
+    background: none;
+}

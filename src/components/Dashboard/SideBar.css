@@ -1,0 +1,21 @@
+
+
+.sidebar-btns.css-1w1rijm-MuiButtonBase-root-MuiButton-root {
+    color: #272727;
+    background: none;
+    border: none;
+    font-family: 'Roboto';
+    padding: 1vw;
+    margin-top: 4vh;
+    outline: none !important;
+    cursor: pointer;    
+}
+
+.sidebar-btns.css-1w1rijm-MuiButtonBase-root-MuiButton-root:hover {
+    background: var(--green, #56B280);
+}
+
+.sidebar-btns.css-1w1rijm-MuiButtonBase-root-MuiButton-root:active {
+    text-decoration: underline var(--green, #56B280);
+
+}

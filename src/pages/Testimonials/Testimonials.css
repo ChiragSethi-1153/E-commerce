@@ -1,0 +1,94 @@
+.testimonials {
+  height: 77.051vh;
+  background: rgba(86, 178, 128, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials-title {
+  width: 77.014vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 11.538vh;
+  margin-bottom: 3.462vh;
+}
+
+.testimonials-title > h1 {
+  flex-shrink: 0;
+  color: #0b254b;
+
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Poppins";
+  font-size: 5.128vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.385vh; /* 144% */
+  letter-spacing: -0.063vw;
+}
+
+.testimonials-title > p {
+  color: var(--dark-1, #5e6e89);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Poppins";
+  font-size: 2.308vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.538vh; /* 153.333% */
+  letter-spacing: 0.007vw;
+}
+.testimonial-cards {
+  display: flex;
+  flex-direction: row;
+  width: 77.083vw;
+  justify-content: space-between;
+}
+
+.testimonial-card {
+  width: 24.306vw;
+  height: 37.821vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.testimonial-card > img {
+  width: 5.833vw;
+  margin-top: 4.231vh;
+}
+
+.testimonial-card > h6 {
+  margin-top: 2.821vh;
+  width: 21.111vw;
+  height: 7.692vh;
+
+  color: #1d293f;
+
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Poppins";
+  font-size: 2.821vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.692vh; /* 130.909% */
+}
+
+.testimonial-card > p {
+  margin-top: 0.7692vh;
+  width: 22.222vw;
+  height: 2.949vh;
+
+  color: #7c8087;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Helvetica;
+  font-size: 2.308vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

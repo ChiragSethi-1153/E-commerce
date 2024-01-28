@@ -4,6 +4,7 @@
     align-items: center;
     background-color: #fff;
     height: 9.615vh;
+    border-bottom: 0.5px solid rgba(86, 178, 128, 0.20);
 }
 
 .logo {

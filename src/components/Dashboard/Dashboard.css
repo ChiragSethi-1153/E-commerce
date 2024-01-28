@@ -1,0 +1,85 @@
+.admin {
+    display: flex;
+}
+
+.left {
+    
+    border: 1px solid rgb(238, 224, 224);
+    width: 16vw;
+    height: 91vh;
+    background-color: #fff;
+}
+
+.right {
+    border-top: 1px solid rgb(238, 224, 224);
+    width: 155vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.right > h1 {
+    position: absolute;
+    left: 20vw;
+    top: 16vh;
+    font-family: 'Roboto';
+    color: #272727;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.stat-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+    height: 15vh;
+    font-family: 'Roboto';
+    font-size: larger;
+    border: 1px solid rgb(160, 151, 151);
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px 3px #dbdada;
+
+}
+
+.totalSalesIcon {
+    width: 4vw;
+    height: 7vh;
+    background-color: var(--green, #56B280);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid var(--green, #56B280);
+}
+.totalOrdersIcon {
+    width: 4vw;
+    height: 7vh;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid orangered;
+}
+.totalProductsIcon {
+    width: 4vw;
+    height: 7vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid blue;
+
+}
+
+.ShoppingBasketIcon.css-i4bv87-MuiSvgIcon-root{
+    fill: #fff;
+}

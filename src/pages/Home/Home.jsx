@@ -2,9 +2,14 @@ import React from 'react'
 import "./Home.css"
 import Sapling from "../../assets/images/sapling.png"
 import { Button } from '@mui/material'
+import Products from '../../components/Products/Products'
+import AboutSection from '../AboutSection/AboutSection'
+import Testimonials from '../Testimonials/Testimonials'
+import Popular from '../Popular/Popular'
 
 const Home = () => {
   return (
+    <>
     <div className='hero'>
       <div className='box'>
         <div>
@@ -15,6 +20,12 @@ const Home = () => {
         <Button variant='contained' className='hero-btn' >Discovery our collection</Button>
       </div>
     </div>
+
+    <Products />
+    <AboutSection />
+    <Testimonials />
+    <Popular />
+    </>
   )
 }
 

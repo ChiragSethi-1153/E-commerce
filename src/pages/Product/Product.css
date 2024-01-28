@@ -1,0 +1,87 @@
+.product-page {
+  display: flex;
+  flex-direction: row;
+  height: 92.436vh;
+}
+.product-left {
+  margin-left: 11.458vw;
+}
+
+.product-img {
+  width: 37.5vw;
+  height: 55.513vh;
+  background: #f7f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.026vh;
+}
+
+.product-img-text {
+  color: var(--black, #272727);
+  width: 37.5vw;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25.6px;
+  /* 116.364% */
+  letter-spacing: -0.9px;
+  margin-top: 2.179vh;
+}
+
+.product-shipping {
+  color: var(--green, #56b280);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Roboto";
+  font-size: 2.564vh;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.282vh;
+  letter-spacing: -0.063vw;
+  margin-top: 5vh;
+}
+
+.product-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.153vw;
+  margin-bottom: 20.897vh;
+}
+.product-name {
+  margin-top: 6.026vh;
+  display: flex;
+  align-items: center;
+  width: 37.431vw;
+  height: 7.436vh;
+  text-align: left;
+  color: var(--black, #272727);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: 'Poppins';
+  font-size: 3.333vh;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.385vh; /* 221.538% */
+  letter-spacing: -0.063vw;
+}
+
+.product-description {
+   width: 37.5vw;
+   height: 16.795vh;
+
+   color: #849A8E;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Helvetica;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 25.6px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: row;
+    
+}

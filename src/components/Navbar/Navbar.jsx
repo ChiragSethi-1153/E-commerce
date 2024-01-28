@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useRef } from 'react';
 import Logo from '../../assets/images/bg.jpg'
 import Wordmark  from "../../assets/images/wordmark.jpg";
 import './Navbar.css'
@@ -11,7 +12,7 @@ import ProfileIcon from '../../assets/images/Profile.jpg'
 const Navbar = () => {
 
   const navigate = useNavigate(); 
-
+  const ref = useRef(null);
   const currentUser = localStorage.getItem("user")
 
   function dropdownBtn() {
@@ -30,6 +31,10 @@ const Navbar = () => {
     }
   }
 
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
 
 
 const logout = () => {
@@ -38,7 +43,11 @@ const logout = () => {
   navigate('/login')
 }
 
-const role = JSON.parse(localStorage.getItem("role"));
+let role = JSON.parse(localStorage.getItem("role"));
+ if(role == null ){
+    role = 10
+    localStorage.setItem('role' , JSON.stringify(role))
+ }
  
  
 
@@ -56,9 +65,9 @@ const role = JSON.parse(localStorage.getItem("role"));
         <div className='menu'>
             <select name="discovery" id="" className='nav-discovery'> 
                 <option value="">Discovery</option>
-                <option>Products</option>
-                <option value="">Most Searched</option>
-                <option value="">Most Selled</option>
+                <option onClick={handleClick}>Products</option>
+                <option value="" onClick={handleClick}>Testimonials</option>
+                <option value="" onClick={handleClick}>Popular</option>
             </select>
             <button className='menu-btn' onClick={() => navigate('/about')}>About</button>
             <button className='menu-btn' onClick={() => navigate('/contactus')}>Contact us</button>
@@ -73,7 +82,7 @@ const role = JSON.parse(localStorage.getItem("role"));
                 (role.role === 20)?<button className='profile-btns' onClick={() => navigate('/dashboard')}>Dashboard</button>: null
               }
             {
-            currentUser?<button  className='profile-btns' onClick={logout}>Log Out</button>: <button onClick={() => {navigate('/login')}}>Log In</button>
+            currentUser?<button  className='profile-btns' onClick={logout}>Log Out</button>: <button className='profile-btns' onClick={() => {navigate('/login')}}>Log In</button>
            }
 
            </div>
@@ -82,7 +91,7 @@ const role = JSON.parse(localStorage.getItem("role"));
 
 
 
-            <button className='cart-icon'></button> 
+            <button className='cart-icon' onClick={() => navigate('/cart')}></button> 
         </div>
 
     </div>
