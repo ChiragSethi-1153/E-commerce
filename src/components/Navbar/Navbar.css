@@ -120,7 +120,8 @@
     background-image: url('../../assets/images/Profile.jpg');
     background-color: #fff;
     background-repeat: no-repeat;
-    height: 4.359vh;
+    background-size: contain;
+    height: 4vh;
     width: 2vw;
     color: #fff;
     border: none;

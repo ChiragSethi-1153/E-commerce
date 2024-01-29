@@ -74,11 +74,11 @@ const AddProducts = () => {
       localStorage.setItem("productsData", JSON.stringify(productsData));
     }
 
-    // setProductDescription(null)
-    // setProductImage(null)
-    // setProductName(null)
-    // setProductPrice(null)
-    // setProductQuantity(null)
+    setProductDescription("")
+    // setProductImage("")
+    setProductName("")
+    setProductPrice("")
+    setProductQuantity("")
   };
 
   return (
@@ -99,6 +99,7 @@ const AddProducts = () => {
               type="file"
               accept=".jpg, .jpeg, .png, .svg"
               placeholder="Upload the Product Image"
+              
               onChange={handleFileChange}
               name="image"
               style={{background: '#fff'}}
@@ -108,17 +109,20 @@ const AddProducts = () => {
             <input
               type="text"
               placeholder="Name of Product"
+              value={productName}
               onChange={(e) => setProductName(e.target.value)}
               required
             />
             <input
               type="number"
+              value={productQuantity}
               placeholder="Stock Quantity"
               onChange={(e) => setProductQuantity(e.target.value)}
               required
             />
             <input
               type="number"
+              value={productPrice}
               placeholder="Price in Dollars"
               onChange={(e) => setProductPrice(e.target.value)}
               required
@@ -126,6 +130,7 @@ const AddProducts = () => {
             <textarea 
             // rows="3" 
             // cols="60" 
+            value={productDescription}
             className="description-area"
             placeholder="Description"
             onChange={(e) => setProductDescription(e.target.value)}

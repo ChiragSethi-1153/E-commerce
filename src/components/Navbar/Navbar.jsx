@@ -65,6 +65,7 @@ let role = JSON.parse(localStorage.getItem("role"));
         <div className='menu'>
             <select name="discovery" id="" className='nav-discovery'> 
                 <option value="">Discovery</option>
+                <option>Home</option>
                 <option onClick={handleClick}>Products</option>
                 <option value="" onClick={handleClick}>Testimonials</option>
                 <option value="" onClick={handleClick}>Popular</option>

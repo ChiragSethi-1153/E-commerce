@@ -4,7 +4,7 @@ import Home from "../pages/Home/Home";
 import UserSignup from "../pages/UserSignup/UserSignup";
 import UserLogin from "../pages/UserLogin/UserLogin";
 import About from "../pages/About";
-import ContactUs from "../pages/ContactUs";
+import ContactUs from "../pages/Contact/ContactUs";
 import  Dashboard  from "../components/Dashboard/Dashboard";
 import AddProducts from "../components/AddProducts/AddProducts";
 import ViewProducts from "../components/ViewProducts/ViewProducts";
