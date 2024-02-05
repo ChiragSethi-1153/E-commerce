@@ -1,45 +1,92 @@
-const Users = require('../Models/Users')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken');
+const cookie = require('cookie-parser')
+const Users = require('../Models/User');
+require('dotenv').config()
 
-exports.createData = async(payload)=>{
-    const {name, email, age, gender, location} = payload;
+const signup = async (req) => {
+    const { name, email, password, role } = req;
+    let existingUser
     try {
-        const user =  new Users({name, email, age, gender, location});
-        await user.save();
-        return user;
-    } catch (err) {
-        console.error(err);
-        
-    }
-}
+        existingUser = await Users.findOne({ email: email });
+        if (existingUser)  throw "User already exists! Login instead"
+            // return res.status(400).json({ message: "User already exists! Login instead" });
 
-exports.findData = async (request) => {
-        console.log(request.query)
-        let page = Number(request.query.page);
-        let limit = Number(request.query.limit) || 8;
-        let count = await Users.estimatedDocumentCount({});
-        const pageCount = count / limit
-        const users = await Users.find({})
-        .skip(limit * (page-1))
-        .limit(limit)
+    } catch (err) {
+        console.log(err)
+    } 
     
 
-        return {
-            pagination: {
-                count,
-                pageCount
-            },
-            users};
+    const hashedPassword = bcrypt.hashSync(password)
+
+    const user = new Users({
+        name,
+        email,
+        password: hashedPassword,
+        role
+    });
+    try {
+        user.save();
+    }
+    catch (err) {
+        console.log(err)
+    }
+
+    return user
 }
 
-exports.changeData = async (request) => {
-    const {id} = request.params;
-    const { name, email, age, gender, location } = request.body;
-    const users = await Users.findByIdAndUpdate(id, { name, email, age, gender, location }, { new: true })
-    return users;
+const login = async (  req, res) => {
+    const {email, password} = req.body;
+
+    let existingUser;
+    let token
+    // const existingUser
+    try{
+       existingUser  = await Users.findOne({email: email})
+       if(!existingUser) {
+        throw new Error("User not found. Signup Please!")
+    }
+       
+        const isPasswordCorrect = bcrypt.compareSync(password, existingUser.password);
+        if(!isPasswordCorrect) {
+            throw new Error("Invalid Email / Password")
+       }
+        token = jwt.sign({id: existingUser._id}, process.env.JWT_KEY, {
+            expiresIn: "35s"
+        });
+        
+       res.cookie(String(existingUser._id), token, {
+            path: '/',
+            expires: new Date(Date.now() + 1000 * 30),
+            httpOnly: true,
+            // sameSite: 'lax'
+        });
+        return {message: "Successfully Logged In", user: existingUser, token}
+    }catch(err) {
+        return new Error(err);
+    }
+    
+    
+   
 }
 
-exports.deleteData = async (request) => {
-    const {id} = request.params;
-    const users = await Users.findByIdAndDelete(id)
-    return users;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module.exports = {
+    signup,
+    login,
 }

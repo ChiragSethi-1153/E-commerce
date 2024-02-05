@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json({extended:true}));
 app.use(cors())
-// app.use('/', require('./Routes'))
+app.use('/', require('./Routes'))
 app.use(cookieParser())
 
 app.listen(process.env.PORT, function(){

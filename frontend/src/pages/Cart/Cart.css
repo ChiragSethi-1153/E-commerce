@@ -69,3 +69,32 @@ text-decoration-line: underline;
   font-family: 'Poppins';
   text-align: left;
 }
+
+.cart-subsection {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sub-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5vh;
+}
+
+.checkout-btn.css-sghohy-MuiButtonBase-root-MuiButton-root{
+  background-color: #56B280;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-top: 6vh;
+  margin-right: 6vw;
+  height: 4vh;
+  padding: 1vh 2vw;
+  outline: none !important;
+}
+
+.checkout-btn.css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+    cursor: pointer;
+    color: #56B280;
+    background-color: #fff;
+    border: 1px solid #56B280;
+}

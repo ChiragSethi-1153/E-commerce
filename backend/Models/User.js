@@ -19,13 +19,13 @@ const userSchema = new Schema({
         minlength: 8
     },
     role: {
-        type: String,
+        type: Number,
         required: true,
-    },
-    cart: {
-        
     }
 
 });
 
-module.exports = mongoose.model('User', userSchema)
+
+
+const Users  = mongoose.model('Users', userSchema)
+module.exports = Users

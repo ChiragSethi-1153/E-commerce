@@ -1,11 +1,14 @@
 import React from 'react'
 import './Cart.css'
 import { Link } from 'react-router-dom'
-import { Button } from '@mui/material';
-
+import { Button, CardContent } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 
 const Cart = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className='cart'>
     <div className='cart-title'>
@@ -56,12 +59,22 @@ const Cart = () => {
           </tbody>
         </table>
 
-        <div>
-          <h4>Sub-total</h4>
-          <h4>$ Price</h4>
-          <Button>Check-out</Button>
+        <div className='cart-subsection'>
+
+          <div style={{display:'flex', alignItems: 'flex-end', flexDirection: 'column', margin: '3vw', marginRight: '8vw'}}>
+            <div style={{display:'flex', flexDirection:'row', justifyContent: 'space-between', width: '17vw'}}>
+              <h4>Sub-total</h4>
+              <h4>$ Price</h4>
+          </div>
+          
+          <p>Tax and shipping cost will be calculated later</p>
+          
+          </div>
+       
+          <Button  variant='contained' className='checkout-btn' onClick={() => navigate('/paymentdetails')}>Check-out</Button>
         </div>
-    </div>
+        
+        </div>
       
     </div>
   )

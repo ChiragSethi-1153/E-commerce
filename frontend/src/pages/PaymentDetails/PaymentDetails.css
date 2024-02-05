@@ -1,0 +1,132 @@
+.logo {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    left: 11.458vw;
+    top: 2.564vh;
+}
+
+.logo-text {
+    width: 5.92vw;
+    height: 1.874vh;
+    margin-left: 0.44vw;
+}
+
+.logo-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.75vw;
+    height: 4.359vh;
+    cursor: pointer;
+    outline: none !important;
+}
+
+
+.payment-details {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.pd-left {
+width: 100%;
+}
+.pd-right {
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.contact-detail-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.contact-detail {
+    width: 28.542vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.contact-text{
+    color: var(--black, #272727);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Roboto";
+    font-size: 1.389vw;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 3.282vh;
+    margin-bottom: 0;
+    letter-spacing: -0.063vw;
+}
+
+.login-btn{
+    border: none;
+    color:  var(--green, #56B280);
+    background: none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.contact-detail-form{
+    width: 28.542vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.contact-detail-form-input{
+    padding: 0.897vh 1.181vw;
+    border: 1px solid;
+    border-color: #898989;
+    border-radius: none;
+    width: 30.903vw;
+    height: 5.128vh;
+    outline: none !important;
+}
+
+.contact-detail-form-input:active{
+    border: 1px solid;
+    border-color: #898989;
+    border-radius: none;
+    outline: none !important;
+}
+
+.contact-detail-form-input::placeholder{
+    color: #616161;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    align-items: center;
+}
+
+
+.newsletter-checkbox{
+    border: 1px solid;
+    border-color: #898989;
+    border-radius: none;
+    outline: none !important;
+    width: 1vw;
+    height: 1vw;
+    margin: 0;
+    padding: 0;
+}
+
+

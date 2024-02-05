@@ -1,3 +1,3 @@
-const controller = require("express").Router();
-router.use("/", require('./user.controller'))
-module.exports = controller;
+module.exports = {
+    userController: require('./userController')
+}
