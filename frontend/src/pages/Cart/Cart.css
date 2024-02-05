@@ -43,3 +43,29 @@ letter-spacing: -0.9px;
 text-decoration-line: underline;
 
 }
+
+.cart-remove-btn {
+  color: #56B280;
+  text-decoration: underline;
+  border: none;
+  background: none;
+}
+
+.cart-table {
+  margin-left: 9vw;
+  margin-top: 5vh;
+  width: 85vw;
+  
+}
+
+.cart-table-header>tr>th{
+  font-family: 'Poppins';
+  text-align: left;
+  font-weight: 600;
+
+}
+
+.cart-table-body>tr>td{
+  font-family: 'Poppins';
+  text-align: left;
+}
