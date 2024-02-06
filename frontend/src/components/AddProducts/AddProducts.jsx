@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import SideBar from "../Dashboard/SideBar";
+import axios from 'axios'
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -101,7 +102,7 @@ const AddProducts = () => {
               placeholder="Upload the Product Image"
               
               onChange={handleFileChange}
-              name="image"
+              name="product-images"
               style={{background: '#fff'}}
               required
             />

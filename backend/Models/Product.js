@@ -19,13 +19,14 @@ const productSchema = new mongoose.Schema({
         required: true
     },
     image: {
-        type: Image,
-        required: true
+        data: Buffer,
+        contentType: String,
+        // required: true
     }
     
 });
 
-const Users = mongoose.model('User', userSchema);
+const Products = mongoose.model('Product', productSchema);
 
-module.exports = Users;
+module.exports = Products;
 

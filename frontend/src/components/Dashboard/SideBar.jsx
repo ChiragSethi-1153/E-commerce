@@ -5,17 +5,23 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import AddIcon from '@mui/icons-material/Add';
 import { useNavigate } from "react-router-dom";
 import VisibilityIcon from '@mui/icons-material/Visibility';
-
+// import {useDispatch, useSelector } from "react-redux";
+// import { fetchProducts } from "../../redux/slices/productSlice";
 
 const SideBar = () => {
-
+    
     const navigate = useNavigate();
-
+    
     const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
     setIsActive(!isActive);
   };
+
+  // const viewProduct = () => {
+  //   const state = useSelector((state) => state)
+  //       console.log(state)
+  // }
 
   return (
     <div className="sidebar">
@@ -41,7 +47,11 @@ const SideBar = () => {
       variant="filled" 
       startIcon={<VisibilityIcon />} 
       className="sidebar-btns"
-      onClick={() => navigate('/viewProducts')}
+      onClick={() =>{
+        navigate('/viewProducts')
+     
+    }
+        }
       >
         View Products
       </Button>
